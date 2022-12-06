@@ -345,15 +345,15 @@ body {
         padding-top: .5rem;
         flex-direction: row;
         width: 100%;
-        gap: 10%;
+        gap: 30%;
     }
 
     .name {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .domain {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #cnot {
@@ -365,7 +365,8 @@ body {
         left: 50%;
         width: 35%;
         text-align: center;
-        bottom: 11%;
+        bottom: 15%;
+        font-size: 1.5rem
     }
 
     .date {
@@ -373,7 +374,8 @@ body {
         left: 50%;
         width: 65%;
         text-align: center;
-        bottom: -10%;
+        font-size: 1.3rem;
+        bottom: -7%;
     }
 }
 
@@ -386,14 +388,6 @@ body {
         font-size: 1.2rem;
     }
 
-    .name {
-        font-size: 1.5rem;
-    }
-
-    .domain {
-        font-size: 1.3rem;
-    }
-
     .profile {
         gap: 20%;
     }
@@ -401,12 +395,9 @@ body {
     #join {
         width: 40%;
         bottom: 15%;
-        font-size: 1.5rem;
     }
 
     .date {
         width: 65%;
-        font-size: 1.3rem;
-        bottom: -7%;
     }
 }
