@@ -7,9 +7,8 @@
     <title>DVM Farewell 2k22</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
-    <script defer type="module" src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
 </head>
 
 <body>
@@ -184,5 +183,22 @@
 
     document.querySelector('#left').addEventListener('click', () => changePosition(-1))
     document.querySelector('#right').addEventListener('click', () => changePosition(1))
+
+
+    const parallax = (e) => {
+        for(i=1; i<=4; i++) {
+            curl = document.querySelector(`#curl-${i}`);
+            const speed = i%2 == 0 ? i * 0.01 : i * -.01;
+            const left = curl.style.left;
+            const top = curl.style.top;
+            const x = left - e.pageX * speed;
+            const y = top - e.pageY * speed * 2;
+            curl.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        }
+    
+  };
+
+  document.addEventListener("mousemove", parallax);
+
 </script>
 </html>
